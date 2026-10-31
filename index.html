@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASK - E-Portfolio PPG Calon Guru | PPL Mandiri</title>
+  <meta name="description" content="E-Portfolio Pendidikan Profesi Guru (PPG) - Praktik Pengalaman Lapangan (PPL) Mandiri oleh Christophorus Ade Setya Cahya Kustanto di SMA Negeri 1 Karangnongko">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Outfit:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-bg-text">Bahasa Indonesia</div>
+    <div class="loader-content">
+      <img src="assets/logo.png" alt="Logo Universitas Widya Dharma Klaten" class="loader-logo">
+      <h2 class="loader-name">Christophorus Ade Setya Cahya Kustanto</h2>
+      <p class="loader-subtitle">PPG Calon Guru 2026 &bull; PPL Mandiri</p>
+      <div class="loader-progress-container">
+        <div class="loader-progress-bar"></div>
+      </div>
+      <div class="loader-percentage" id="load-percentage">0%</div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+    <div class="logo-container">
+      <a href="#beranda" class="logo-link">
+        <img src="assets/logo.png" alt="Logo Universitas Widya Dharma Klaten" class="logo-img">
+        <span class="logo-text">Universitas Widya Dharma<br>Klaten</span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Home</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#profil">Profil Mahasiswa</a>
+          <div class="nav-dropdown-content">
+            <a href="#profil" onclick="openModal('modal-latar-belakang')"><i class="fas fa-history"></i> Latar Belakang</a>
+            <a href="#profil" onclick="openModal('modal-hobi')"><i class="fas fa-heart"></i> Hobi & Minat</a>
+            <a href="#profil" onclick="openModal('modal-motivasi')"><i class="fas fa-lightbulb"></i> Motivasi</a>
+            <a href="#filosofi"><i class="fas fa-chalkboard-teacher"></i> Filosofi Mengajar</a>
+          </div>
+        </li>
+        <li><a href="#artefak">Artefak PPL</a></li>
+        <li><a href="#refleksi">Refleksi Akhir</a></li>
+        <li><a href="#dokumentasi">Dokumentasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Ornaments -->
+  <div class="ornaments">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="orb orb-5"></div>
+    <div class="orb orb-6"></div>
+    <div class="orb orb-7"></div>
+    <div class="orb orb-8"></div>
+    
+    <!-- Background Grid & Waves -->
+    <div class="grid-lines"></div>
+    <div class="wave-container">
+      <svg class="wave-line" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2" d="M0,160 C320,300 420,0 720,160 C1020,320 1120,20 1440,160" />
+      </svg>
+      <svg class="wave-line wave-2" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="2" d="M0,100 C200,200 600,0 900,100 C1200,200 1300,100 1440,100" />
+      </svg>
+    </div>
+
+    <!-- Education Icons -->
+    <div class="edu-icons">
+      <i class="fas fa-book edu-icon icon-1"></i>
+      <i class="fas fa-graduation-cap edu-icon icon-2"></i>
+      <i class="fas fa-pencil-alt edu-icon icon-3"></i>
+      <i class="fas fa-globe-asia edu-icon icon-4"></i>
+    </div>
+
+    <!-- Twinkling Particles -->
+    <div class="particles-container">
+      <div class="particle p-1"></div>
+      <div class="particle p-2"></div>
+      <div class="particle p-3"></div>
+      <div class="particle p-4"></div>
+      <div class="particle p-5"></div>
+      <div class="particle p-6"></div>
+      <div class="particle p-7"></div>
+      <div class="particle p-8"></div>
+      <div class="particle p-9"></div>
+      <div class="particle p-10"></div>
+      <div class="particle p-11"></div>
+      <div class="particle p-12"></div>
+      <div class="particle p-13"></div>
+      <div class="particle p-14"></div>
+      <div class="particle p-15"></div>
+    </div>
+
+    <!-- Light Beams -->
+    <div class="light-beams">
+      <div class="beam beam-1"></div>
+      <div class="beam beam-2"></div>
+    </div>
+
+    <!-- Floating Glass Cards -->
+    <div class="glass-ornaments">
+      <div class="g-card gc-1"></div>
+      <div class="g-card gc-2"></div>
+      <div class="g-card gc-3"></div>
+    </div>
+    <div id="cursor-glow"></div>
+  </div>
+
+  <!-- Beranda Section -->
+  <section id="beranda">
+    <div class="hero-section">
+      <div class="content-left">
+        <p class="top-quote">PPG Calon Guru 2026 &bull; Bidang Studi Pendidikan Bahasa Indonesia</p>
+        <h1 class="main-title">Christophorus<br>Ade Setya<br>Cahya Kustanto</h1>
+        <p class="nim-text"><i class="fas fa-id-card" style="margin-right: 8px; color: var(--accent-color);"></i>NIM: 2501094596 &bull; SMAN 1 Karangnongko</p>
+        <p class="sub-heading">“Mengajar memberi ilmu, mendidik membentuk manusia.”</p>
+        
+        <div class="social-icons">
+          <a href="https://www.instagram.com/adesetyakst?igsh=MTRvYm84cGh1ajMwMQ==" target="_blank" aria-label="Instagram" class="icon-ig"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@christophorusade2793?si=xkYL_695GriIgQW-" target="_blank" aria-label="YouTube" class="icon-yt"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@chrasck?_r=1&_t=ZS-95sQQHgFFHl" target="_blank" aria-label="TikTok" class="icon-tt"><i class="fab fa-tiktok"></i></a>
+          <div class="icon-dropdown">
+            <a href="#" class="icon-gmail" aria-label="Email Accounts"><i class="fas fa-envelope"></i></a>
+            <div class="dropdown-content">
+              <a href="mailto:chr.adesetya.c.k@gmail.com"><i class="fas fa-envelope"></i> Pribadi</a>
+              <a href="mailto:christophorusade06@student.uns.ac.id"><i class="fas fa-university"></i> UNS Account</a>
+              <a href="mailto:peserta.26151@ppg.belajar.id"><i class="fas fa-graduation-cap"></i> PPG Belajar.id</a>
+            </div>
+          </div>
+          <div class="icon-dropdown">
+            <a href="#" class="icon-phone" aria-label="Phone Contacts"><i class="fas fa-phone"></i></a>
+            <div class="dropdown-content">
+              <a href="https://wa.me/6285729824005" target="_blank"><i class="fab fa-whatsapp"></i> Nomor Utama</a>
+              <a href="https://wa.me/6285742309626" target="_blank"><i class="fab fa-whatsapp"></i> Nomor Alternatif</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content-right">
+        <div class="image-container">
+          <div class="bg-text-container">
+            <div class="bg-text">Bahasa Indonesia</div>
+            <div class="bg-text">Bahasa Indonesia</div>
+            <div class="bg-text">Bahasa Indonesia</div>
+            <div class="bg-text">Bahasa Indonesia</div>
+          </div>
+          <img src="assets/profile-cutout.png" alt="Christophorus Ade Setya Cahya Kustanto" class="profile-image">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Profil Section -->
+  <section id="profil">
+    <div class="page-container">
+      <h2 class="page-title">Profil Mahasiswa</h2>
+      
+      <div class="profil-cards-container">
+        <div class="profil-card" id="card-latar-belakang" style="cursor: pointer;">
+          <h3 class="p-card-title">Latar Belakang</h3>
+          <p class="p-card-text">Merajut latar belakang dan pengalaman belajar menjadi visi besar untuk masa depan pendidikan Bahasa Indonesia.</p>
+        </div>
+        
+        <div class="profil-card" id="card-hobi" style="cursor: pointer;">
+          <h3 class="p-card-title">Hobi & Minat</h3>
+          <p class="p-card-text">Hiking, traveling, dan running menghadirkan ruang refleksi, resiliensi, dan kebugaran prima dalam dedikasi mengajar.</p>
+        </div>
+        
+        <div class="profil-card" id="card-motivasi" style="cursor: pointer;">
+          <h3 class="p-card-title">Motivasi</h3>
+          <p class="p-card-text">Panggilan jiwa untuk menjadi pelita bagi tunas bangsa, menumbuhkan literasi kritis, dan membentuk karakter mulia.</p>
+        </div>
+
+        <div class="profil-card" id="card-filosofi" style="cursor: pointer;">
+          <h3 class="p-card-title">Filosofi</h3>
+          <p class="p-card-text">Prinsip among Ki Hajar Dewantara yang menuntun kodrat anak demi mewujudkan pembelajaran berpihak pada murid.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Filosofi Mengajar Section -->
+  <section id="filosofi">
+    <div class="page-container">
+      <h2 class="page-title">Filosofi Mengajar</h2>
+      
+      <div class="section-block">
+        <p style="font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 20px; font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; color: #fff;">
+          "Pendidikan adalah tuntunan dalam hidup tumbuhnya anak-anak, menuntun segala kekuatan kodrat yang ada pada anak-anak itu, agar mereka sebagai manusia dan anggota masyarakat dapatlah mencapai keselamatan dan kebahagiaan yang setinggi-tingginya." <br>— <strong>Ki Hajar Dewantara</strong>
+        </p>
+
+        <p class="section-text" style="margin-bottom: 20px;">
+          Bagi saya, mengajar adalah seni menuntun kodrat peserta didik agar mereka mencapai keselamatan dan kebahagiaan sejati. Berpijak pada semboyan <em>“Ing ngarso sung tulodo, ing madyo mangun karso, tut wuri handayani”</em>, saya meyakini peran guru di abad ke-21 adalah sebagai fasilitator pembelajaran yang berempati, membangun kesetaraan nalar, dan menumbuhkan daya juang belajar mandiri.
+        </p>
+        <p class="section-text" style="margin-bottom: 20px;">
+          Dalam praktik di SMA Negeri 1 Karangnongko, saya memadukan <strong>Konstruktivisme Sosial Lev Vygotsky</strong> dengan pendekatan <strong>Deep Learning</strong> (Bermakna, Menggembirakan, dan Berkesadaran). Melalui pemberian <em>scaffolding</em> dan rotasi peran yang inklusif, setiap siswa berhak belajar sesuai tingkat capaian perkembangannya (<em>Teaching at the Right Level / TaRL</em>) serta terakomodasi melalui rancangan multisensori (<em>Universal Design for Learning / UDL</em>).
+        </p>
+        <p class="section-text">
+          Nilai kemanusiaan Carl Rogers mengenai <em>Student-Centered Learning</em> saya wujudkan dalam diferensiasi konten, proses, hingga produk akhir belajar. Ruang kelas menjadi laboratorium literasi yang aman secara psikologis, tempat di mana kesalahan dieksplorasi sebagai batu loncatan pemahaman kritis dan setiap bakat autentik dirayakan secara bermartabat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artefak Section -->
+  <section id="artefak">
+    <div class="page-container">
+      <h2 class="page-title">Artefak PPL Mandiri</h2>
+      <p class="section-text" style="text-align: center; margin-bottom: 30px;">
+        Koleksi lengkap dokumen perangkat ajar, lembar kerja refleksi siklus 1 s.d. 4, jurnal mengajar, dan portofolio karya siswa. Klik tombol untuk membuka dan membaca berkas langsung di peramban.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="artefak-filters">
+        <button class="filter-btn active" onclick="filterArtefak('all', this)"><i class="fas fa-th-large"></i> Semua Artefak</button>
+        <button class="filter-btn" onclick="filterArtefak('siklus', this)"><i class="fas fa-clipboard-check"></i> Siklus 1 - 4 & Terbimbing</button>
+        <button class="filter-btn" onclick="filterArtefak('modul', this)"><i class="fas fa-book-open"></i> Modul Ajar</button>
+        <button class="filter-btn" onclick="filterArtefak('orientasi', this)"><i class="fas fa-school"></i> LK 1 & LK 2</button>
+        <button class="filter-btn" onclick="filterArtefak('non-mengajar', this)"><i class="fas fa-chalkboard-user"></i> Non-Mengajar & Jurnal</button>
+        <button class="filter-btn" onclick="filterArtefak('evaluasi', this)"><i class="fas fa-tasks"></i> Karya & Dokumentasi</button>
+      </div>
+
+      <!-- Artefak Cards Grid -->
+      <div class="cards-grid">
+
+        <!-- Card S1: Siklus 1 Mandiri (LK 4.1) -->
+        <div class="artefak-card" data-cat="siklus">
+          <span class="badge-tag" style="background: rgba(37,99,235,0.2); color: #60a5fa;">Siklus 1 Mandiri &bull; LK 4.1</span>
+          <h3 class="card-title">Siklus 1: Teks LHO (Fakta vs Opini)</h3>
+          <p class="card-desc">Fase E Kelas X. Penyelidikan objek nyata lingkungan sekolah untuk memverifikasi data fakta empiris dan menanggalkan opini subjektif.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.1_Refleksi_Siklus_1.pdf', 'LK 4.1 Refleksi Praktik Pembelajaran Mandiri Siklus 1', 'assets/LK_4.1_Refleksi_Siklus_1.docx')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="#" class="card-btn" style="padding: 10px 14px;" onclick="openModal('modal-refleksi-siklus'); switchCycleTab('tab-lk41', document.querySelectorAll('.cycle-tab-btn')[1]); return false;">
+              <i class="fas fa-info-circle"></i> Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Card S2: Siklus 2 Mandiri (LK 4.2) -->
+        <div class="artefak-card" data-cat="siklus">
+          <span class="badge-tag" style="background: rgba(37,99,235,0.2); color: #60a5fa;">Siklus 2 Mandiri &bull; LK 4.2</span>
+          <h3 class="card-title">Siklus 2: Struktur LHO & Pameran Karya</h3>
+          <p class="card-desc">Fase E Kelas X. Rekonstruksi struktur teks LHO utuh, kaidah bahasa, serta pameran hasil karya kelas (Gallery Walk) dengan umpan balik.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.2_Refleksi_Siklus_2.pdf', 'LK 4.2 Refleksi Praktik Pembelajaran Mandiri Siklus 2', 'assets/LK_4.2_Refleksi_Siklus_2.docx')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="#" class="card-btn" style="padding: 10px 14px;" onclick="openModal('modal-refleksi-siklus'); switchCycleTab('tab-lk42', document.querySelectorAll('.cycle-tab-btn')[2]); return false;">
+              <i class="fas fa-info-circle"></i> Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Card S3: Siklus 3 Mandiri (LK 4.3) -->
+        <div class="artefak-card" data-cat="siklus">
+          <span class="badge-tag" style="background: rgba(16,185,129,0.2); color: #34d399;">Siklus 3 Mandiri &bull; LK 4.3</span>
+          <h3 class="card-title">Siklus 3: Teks Argumentasi (Tesis & Fakta)</h3>
+          <p class="card-desc">Fase F Kelas XI. Pendekatan TaRL untuk menganalisis struktur argumentasi, bukti data logis, dan opini dalam wacana ketahanan pangan.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.3_Refleksi_Siklus_3.pdf', 'LK 4.3 Refleksi Praktik Pembelajaran Mandiri Siklus 3', 'assets/LK_4.3_Refleksi_Siklus_3.docx')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="#" class="card-btn" style="padding: 10px 14px;" onclick="openModal('modal-refleksi-siklus'); switchCycleTab('tab-lk43', document.querySelectorAll('.cycle-tab-btn')[3]); return false;">
+              <i class="fas fa-info-circle"></i> Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Card S4: Siklus 4 Mandiri (LK 4.4) -->
+        <div class="artefak-card" data-cat="siklus">
+          <span class="badge-tag" style="background: rgba(16,185,129,0.2); color: #34d399;">Siklus 4 Mandiri &bull; LK 4.4</span>
+          <h3 class="card-title">Siklus 4: Menulis Esai Ketahanan Pangan</h3>
+          <p class="card-desc">Fase F Kelas XI. Penulisan draf esai argumentatif kritis tentang pangan lokal, penguatan konjungsi antarkalimat, dan telaah sejawat.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.4_Refleksi_Siklus_4.pdf', 'LK 4.4 Refleksi Praktik Pembelajaran Mandiri Siklus 4', 'assets/LK_4.4_Refleksi_Siklus_4.docx')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="#" class="card-btn" style="padding: 10px 14px;" onclick="openModal('modal-refleksi-siklus'); switchCycleTab('tab-lk44', document.querySelectorAll('.cycle-tab-btn')[4]); return false;">
+              <i class="fas fa-info-circle"></i> Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Card ST: Praktik Terbimbing (LK 3) -->
+        <div class="artefak-card" data-cat="siklus">
+          <span class="badge-tag" style="background: rgba(245,158,11,0.2); color: #fbbf24;">Praktik Terbimbing &bull; LK 3</span>
+          <h3 class="card-title">Praktik Terbimbing: Membaca Cepat</h3>
+          <p class="card-desc">Fase E Kelas X. Efisiensi membaca cepat teks biografi, menemukan ide pokok, dan menyajikan infografis tokoh inspiratif secara terbimbing.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_3_Refleksi_Terbimbing.pdf', 'LK 3 Refleksi Praktik Pembelajaran Terbimbing', 'assets/LK_3_Refleksi_Terbimbing.docx')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="#" class="card-btn" style="padding: 10px 14px;" onclick="openModal('modal-refleksi-siklus'); switchCycleTab('tab-lk3', document.querySelectorAll('.cycle-tab-btn')[0]); return false;">
+              <i class="fas fa-info-circle"></i> Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Modul: Modul Ajar Berdiferensiasi -->
+        <div class="artefak-card" data-cat="modul">
+          <span class="badge-tag">Perangkat Ajar Utama</span>
+          <h3 class="card-title">Modul Ajar Berdiferensiasi</h3>
+          <p class="card-desc">Modul ajar Kurikulum Merdeka Fase E & F: Teks LHO (pendekatan DUP/UDL) dan Teks Argumentasi (TaRL).</p>
+          <a href="#" class="card-btn" onclick="openModal('modal-perangkat-ajar'); return false;"><i class="fas fa-folder-open" style="margin-right: 6px;"></i> Buka Koleksi Modul</a>
+        </div>
+
+        <!-- Card Orientasi: LK 1 Orientasi & LK 2 Observasi -->
+        <div class="artefak-card" data-cat="orientasi">
+          <span class="badge-tag">Manajemen & Lingkungan</span>
+          <h3 class="card-title">Orientasi & Observasi Sekolah</h3>
+          <p class="card-desc">Dokumen LK 1 Orientasi PPL Mandiri dan LK 2 Observasi Manajemen Sekolah serta Lingkungan Belajar di SMAN 1 Karangnongko.</p>
+          <a href="#" class="card-btn" onclick="openModal('modal-orientasi-observasi'); return false;"><i class="fas fa-search" style="margin-right: 6px;"></i> Lihat LK 1 & LK 2</a>
+        </div>
+
+        <!-- Card Non-Mengajar: Kegiatan Non-Mengajar & Jurnal -->
+        <div class="artefak-card" data-cat="non-mengajar">
+          <span class="badge-tag">Tugas Persekolahan</span>
+          <h3 class="card-title">Kegiatan Non-Mengajar & Jurnal</h3>
+          <p class="card-desc">Pelaksanaan piket harian sekolah (5S), ketertiban pagi, pendampingan ekskul/literasi, serta jurnal harian mengajar kelas X dan XII.</p>
+          <a href="#" class="card-btn" onclick="openModal('modal-non-mengajar'); return false;"><i class="fas fa-calendar-alt" style="margin-right: 6px;"></i> Buka Rekap Kegiatan</a>
+        </div>
+
+        <!-- Card Media: Media Pembelajaran & Bahan Ajar -->
+        <div class="artefak-card" data-cat="modul">
+          <span class="badge-tag">Media & Bahan Ajar</span>
+          <h3 class="card-title">Media & Bahan Ajar Interaktif</h3>
+          <p class="card-desc">Bahan Ajar BAB 1: Mengkritisi Informasi tentang Tokoh. Dilengkapi sajian materi, analisis teks, dan lembar aktivitas belajar peserta didik.</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+            <button class="btn-open-pdf" onclick="openPdfViewer('assets/BAB 1_Mengkritisi Informasi tentang Tokoh.pdf', 'Bahan Ajar BAB 1: Mengkritisi Informasi tentang Tokoh')">
+              <i class="fas fa-eye"></i> Buka File
+            </button>
+            <a href="assets/BAB 1_Mengkritisi Informasi tentang Tokoh.pdf" target="_blank" class="card-btn" style="padding: 10px 14px;">
+              <i class="fas fa-external-link-alt"></i> Tab Baru
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Hasil Belajar Peserta Didik -->
+        <div class="artefak-card" data-cat="evaluasi">
+          <span class="badge-tag">Portofolio Siswa</span>
+          <h3 class="card-title">Hasil Belajar Peserta Didik</h3>
+          <p class="card-desc">Koleksi lembar kerja peserta didik, produk proyek infografis, telaah teks LHO, dan karya esai argumentasi yang tersimpan di Google Drive.</p>
+          <a href="https://drive.google.com/drive/folders/1D5n4TurxnKIoRYy7kmTvThkF8KYQxUQC?usp=drive_link" target="_blank" class="card-btn" style="background: rgba(96, 165, 250, 0.15); border-color: var(--accent-color);"><i class="fab fa-google-drive" style="margin-right: 6px;"></i> Buka Google Drive</a>
+        </div>
+
+
+        <!-- Card Dokumentasi PPL -->
+        <div class="artefak-card" data-cat="evaluasi">
+          <span class="badge-tag">Dokumentasi Lengkap</span>
+          <h3 class="card-title">Dokumentasi PPL (Google Drive)</h3>
+          <p class="card-desc">Arsip dokumentasi foto dan rekaman video kegiatan selama pelaksanaan Praktik Pengalaman Lapangan (PPL) di SMA Negeri 1 Karangnongko.</p>
+          <a href="https://drive.google.com/drive/folders/1nD3LvUb8Hc6GAhknHoLfgH2vlGqV8TcU?usp=drive_link" target="_blank" class="card-btn" style="background: rgba(96, 165, 250, 0.15); border-color: var(--accent-color);"><i class="fab fa-google-drive" style="margin-right: 6px;"></i> Buka Google Drive</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Refleksi Akhir Section -->
+  <section id="refleksi">
+    <div class="page-container">
+      <h2 class="page-title">Refleksi Akhir PPL Mandiri</h2>
+      
+      <div class="section-block">
+        <div style="margin-bottom: 35px;">
+          <h3 class="section-title" style="font-size: 1.35rem; color: var(--accent-color); margin-bottom: 15px; font-family: 'Outfit', sans-serif; text-transform: none; border-bottom: none; padding-bottom: 0;">
+            <i class="fas fa-graduation-cap" style="margin-right: 10px;"></i>1. Apa yang telah dipelajari sebagai mahasiswa PPG calon guru selama tahapan PPL Mandiri dari awal hingga akhir?
+          </h3>
+          <p class="section-text" style="margin-bottom: 15px;">
+            Melalui seluruh rangkaian PPL Mandiri di SMA Negeri 1 Karangnongko, saya belajar secara mendalam bahwa peran guru bukan sekadar penyampai materi kurikulum, melainkan arsitek ekosistem belajar yang responsif terhadap keragaman peserta didik. Saya belajar menyusun dan mempraktikkan modul ajar berbasis <strong>Understanding by Design (UbD / DUP)</strong> pada Siklus 1 & 2 (Teks LHO Kelas X) serta pendekatan <strong>Teaching at the Right Level (TaRL)</strong> pada Siklus 3 & 4 (Teks Argumentasi Kelas XI).
+          </p>
+          <p class="section-text">
+            Saya mengasah kompetensi dalam melakukan asesmen diagnostik awal, memetakan kesiapan membaca siswa, serta merancang langkah pembelajaran yang mengintegrasikan pilar <em>Deep Learning</em> (Bermakna, Menggembirakan, Berkesadaran). Saya juga belajar mengelola iklim kelas yang demokratis di mana siswa tidak merasa dihakimi ketika berpendapat, melainkan didorong untuk bernalar kritis melalui penyelidikan fakta empiris dan perdebatan gagasan yang sehat.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <h3 class="section-title" style="font-size: 1.35rem; color: var(--accent-color); margin-bottom: 15px; font-family: 'Outfit', sans-serif; text-transform: none; border-bottom: none; padding-bottom: 0;">
+            <i class="fas fa-mountain" style="margin-right: 10px;"></i>2. Apakah terdapat pengalaman yang menantang dan bagaimana solusi konkret dari permasalahan tersebut?
+          </h3>
+          <p class="section-text" style="margin-bottom: 15px;">
+            Tantangan paling signifikan yang saya hadapi adalah adanya kesenjangan rentang kemampuan literasi yang lebar antar-siswa di satu rombel. Pada materi Teks LHO, sebagian siswa masih kesulitan membedakan fakta objektif dengan kata sifat subjektif, sementara pada Teks Argumentasi, sebagian siswa cenderung mencantumkan klaim tanpa dukungan data empiris. Selain itu, manajemen waktu pada sintaks pembelajaran kooperatif dan pameran karya (<em>gallery walk</em>) sempat melebar dari rencana alokasi awal.
+          </p>
+          <div style="border-left: 3px solid var(--accent-color); padding: 15px 20px; font-style: normal; background: rgba(96, 165, 250, 0.05); border-radius: 0 12px 12px 0; margin-top: 15px;">
+            <strong style="color: var(--accent-color); font-size: 1rem;"><i class="fas fa-tools" style="margin-right: 6px;"></i> Solusi Konkret yang Diterapkan:</strong>
+            <ul style="margin-top: 10px; margin-left: 20px; color: var(--secondary-text); font-size: 0.98rem; line-height: 1.8;">
+              <li><strong>Diferensiasi Konten & Bahan Ajar Bertingkat:</strong> Menyediakan teks komparatif berjenjang dengan panduan tabel parameter fakta vs opini untuk memandu siswa secara bertahap.</li>
+              <li><strong>Rotasi Peran Inklusif:</strong> Memperkecil kelompok menjadi 3–4 orang dengan peran spesifik (pencari bukti, pencatat data, juru bicara) untuk meniadakan fenomena pasif (*free-rider*).</li>
+              <li><strong>Scaffolding Bertahap (Claim-Evidence-Reasoning):</strong> Menyiapkan lembar pemandu berpikir kritis yang memandu siswa membangun argumen logis berbasis data sebelum menyusun draf esai utuh.</li>
+              <li><strong>Visual Timer & Time-Keeper:</strong> Memasang pengingat waktu digital di layar proyektor untuk menjaga kedisiplinan alokasi waktu pada tiap stasiun display pameran galeri.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-title" style="font-size: 1.35rem; color: var(--accent-color); margin-bottom: 15px; font-family: 'Outfit', sans-serif; text-transform: none; border-bottom: none; padding-bottom: 0;">
+            <i class="fas fa-comment-dots" style="margin-right: 10px;"></i>3. Apakah umpan balik atau saran konstruktif yang diberikan dan komitmen tindak lanjut masa depan?
+          </h3>
+          <p class="section-text" style="margin-bottom: 15px;">
+            Guru Pamong dan Dosen Pembimbing Lapangan memberikan apresiasi atas penguasaan materi yang runtut, pembawaan mengajar yang hangat, serta pemanfaatan media kontekstual yang dekat dengan kehidupan siswa. Saran konstruktif yang diberikan mencakup: (a) terus mengoptimalkan asesmen formatif berbasis aplikasi interaktif, (b) memberikan ruang apresiasi verbal yang lebih merata kepada siswa yang pendiam di pojok kelas, serta (c) memperkuat pembiasaan menulis reflektif mandiri di akhir setiap sesi pembelajaran.
+          </p>
+          <p class="section-text">
+            <strong>Komitmen Tindak Lanjut:</strong> Berbekal pengalaman berharga selama PPL Mandiri di SMAN 1 Karangnongko, saya berkomitmen untuk menjadi pendidik pembelajar sepanjang hayat (<em>lifelong learner</em>) yang konsisten menerapkan prinsip pembelajaran berdiferensiasi, memuliakan keunikan setiap anak didik, serta terus berkontribusi memajukan pendidikan Bahasa Indonesia yang berkarakter Pancasila.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dokumentasi Section -->
+  <section id="dokumentasi">
+    <div class="page-container">
+      <h2 class="page-title">Dokumentasi PPL</h2>
+      
+      <div class="section-block" style="text-align: center; padding: 50px 30px;">
+        <i class="fab fa-google-drive" style="font-size: 3.5rem; color: var(--accent-color); margin-bottom: 20px; display: inline-block;"></i>
+        <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.6rem; color: #fff; margin-bottom: 15px;">Arsip Dokumentasi PPL Mandiri</h3>
+        <p class="section-text" style="max-width: 650px; margin: 0 auto 30px auto;">
+          Seluruh rekaman dokumentasi foto dan video pelaksanaan Praktik Pengalaman Lapangan (PPL) Mandiri di SMA Negeri 1 Karangnongko tersimpan secara terstruktur di Google Drive.
+        </p>
+        <a href="https://drive.google.com/drive/folders/1nD3LvUb8Hc6GAhknHoLfgH2vlGqV8TcU?usp=drive_link" target="_blank" class="download-pill-btn" style="font-size: 1rem; padding: 12px 30px;">
+          <i class="fab fa-google-drive"></i> Buka Google Drive Dokumentasi Lengkap
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Modal Full-Screen Document Viewer -->
+  <div id="modal-pdf-viewer" class="modal">
+    <div class="modal-content" style="max-width: 1050px; width: 95%; height: 90vh; padding: 25px; display: flex; flex-direction: column;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 15px;">
+        <h3 id="pdf-viewer-title" style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; color: var(--accent-color); margin: 0; display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-file-alt"></i> Pratinjau Dokumen
+        </h3>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <a id="pdf-viewer-external" href="#" target="_blank" class="filter-btn" style="padding: 7px 16px; font-size: 0.85rem; background: rgba(96,165,250,0.2); color: #fff;">
+            <i class="fas fa-external-link-alt"></i> Tab Baru
+          </a>
+          <a id="pdf-viewer-download" href="#" class="filter-btn" style="padding: 7px 16px; font-size: 0.85rem; background: rgba(255,255,255,0.1); color: #fff;">
+            <i class="fas fa-file-word"></i> Unduh Word
+          </a>
+          <span class="close-modal" style="position: static; font-size: 28px; cursor: pointer; margin-left: 10px;" onclick="closeModal('modal-pdf-viewer')">&times;</span>
+        </div>
+      </div>
+      <div style="flex: 1; width: 100%; border-radius: 12px; overflow: hidden; background: #111827; box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);">
+        <iframe id="pdf-viewer-frame" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Latar Belakang -->
+  <div id="modal-latar-belakang" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-latar-belakang')">&times;</span>
+      <div class="modal-nav next" onclick="switchModal('modal-latar-belakang', 'modal-hobi')"><i class="fas fa-chevron-right"></i></div>
+      <h2 class="modal-title">Latar Belakang & Asal Usul</h2>
+      <div class="modal-body">
+        <div class="modal-two-col">
+          <div class="modal-col-left">
+            <div class="modal-photo-box">
+              <img src="assets/WhatsApp Image 2026-04-27 at 14.44.47.jpeg" alt="Latar Belakang - Christophorus Ade" class="modal-box-img">
+            </div>
+            <div class="modal-tag">Christophorus Ade S.C.K, S.Pd.</div>
+            <div class="modal-tag">NIM: 2501094596</div>
+          </div>
+          <div class="modal-col-right">
+            <p>Lahir dan besar di lingkungan yang sangat menghargai pendidikan, saya tumbuh dengan keyakinan kuat bahwa pendidikan adalah kunci utama membuka peradaban masa depan. Saya menempuh pendidikan sarjana di bidang keguruan dan saat ini menuntaskan Pendidikan Profesi Guru (PPG) Calon Guru di <strong>Universitas Widya Dharma Klaten</strong> dengan sekolah penugasan di <strong>SMA Negeri 1 Karangnongko</strong>.</p>
+            <p>Pengalaman hidup, interaksi sosial yang beragam, dan keterlibatan aktif dalam dinamika persekolahan membentuk karakter saya menjadi pendidik yang sabar, tekun, dan kaya empati dalam membersamai proses belajar anak didik.</p>
+            <p style="border-left: 4px solid var(--accent-color); padding-left: 15px; font-style: italic; margin-top: 15px;">“Cita-cita saya adalah menjadi pendidik yang tidak sekadar mentransfer ilmu, tetapi menuntun karakter luhur dan menyalakan api keingintahuan generasi penerus bangsa.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Hobi -->
+  <div id="modal-hobi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-hobi')">&times;</span>
+      <div class="modal-nav prev" onclick="switchModal('modal-hobi', 'modal-latar-belakang')"><i class="fas fa-chevron-left"></i></div>
+      <div class="modal-nav next" onclick="switchModal('modal-hobi', 'modal-motivasi')"><i class="fas fa-chevron-right"></i></div>
+      <h2 class="modal-title">Hobi & Minat</h2>
+      <div class="modal-body">
+        <p style="margin-bottom: 25px; text-align:center;">Klik kartu untuk membaca refleksi dari hobi saya:</p>
+        <div class="hobi-photo-cards">
+
+          <!-- Hiking Photo Card -->
+          <div class="hobi-photo-card" onclick="openModal('modal-detail-hiking')">
+            <div class="hobi-photo-placeholder hobi-has-photo">
+              <img src="assets/hiking.jpg.jpeg" alt="Hiking - Christophorus Ade" class="hobi-card-img">
+            </div>
+            <div class="hobi-photo-label">Hiking</div>
+          </div>
+
+          <!-- Traveling Photo Card -->
+          <div class="hobi-photo-card" onclick="openModal('modal-detail-traveling')">
+            <div class="hobi-photo-placeholder hobi-has-photo">
+              <img src="assets/IMG_20240516_101855.jpg" alt="Traveling - Christophorus Ade" class="hobi-card-img">
+            </div>
+            <div class="hobi-photo-label">Traveling</div>
+          </div>
+
+          <!-- Running Photo Card -->
+          <div class="hobi-photo-card" onclick="openModal('modal-detail-running')">
+            <div class="hobi-photo-placeholder hobi-has-photo">
+              <img src="assets/running.jpg.jpeg" alt="Running - Christophorus Ade" class="hobi-card-img">
+            </div>
+            <div class="hobi-photo-label">Running</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal Hiking -->
+  <div id="modal-detail-hiking" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-detail-hiking')">&times;</span>
+      <div class="modal-nav prev" onclick="switchModal('modal-detail-hiking', 'modal-detail-running')"><i class="fas fa-chevron-left"></i></div>
+      <div class="modal-nav next" onclick="switchModal('modal-detail-hiking', 'modal-detail-traveling')"><i class="fas fa-chevron-right"></i></div>
+      <h2 class="modal-title">Hiking: Resiliensi & Keteguhan Tekad</h2>
+      <div class="modal-body">
+        <div class="modal-two-col">
+          <div class="modal-col-left">
+            <div class="modal-photo-box">
+              <img src="assets/hiking.jpg.jpeg" alt="Hiking - Christophorus Ade" class="modal-box-img">
+            </div>
+            <div class="modal-tag">Alam Bebas</div>
+            <div class="modal-tag">Petualangan</div>
+          </div>
+          <div class="modal-col-right">
+            <p>Mendaki gunung adalah metafora perjuangan mendidik. Setiap tanjakan curam mengajarkan kesabaran, dan setiap puncak mengingatkan bahwa hasil manis lahir dari konsistensi langkah kaki yang tidak kenal lelah.</p>
+            <p>Pengalaman di alam terbuka mengasah kepekaan saya dalam membaca situasi, mengelola risiko, dan membuat keputusan tenang di bawah tekanan — keahlian yang sangat vital dalam mengelola dinamika kelas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal Traveling -->
+  <div id="modal-detail-traveling" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-detail-traveling')">&times;</span>
+      <div class="modal-nav prev" onclick="switchModal('modal-detail-traveling', 'modal-detail-hiking')"><i class="fas fa-chevron-left"></i></div>
+      <div class="modal-nav next" onclick="switchModal('modal-detail-traveling', 'modal-detail-running')"><i class="fas fa-chevron-right"></i></div>
+      <h2 class="modal-title">Traveling: Kepekaan Kultural & Wawasan Luas</h2>
+      <div class="modal-body">
+        <div class="modal-two-col">
+          <div class="modal-col-left">
+            <div class="modal-photo-box">
+              <img src="assets/IMG_20240516_101855.jpg" alt="Traveling - Christophorus Ade" class="modal-box-img">
+            </div>
+            <div class="modal-tag">Eksplorasi</div>
+            <div class="modal-tag">Wawasan Budaya</div>
+          </div>
+          <div class="modal-col-right">
+            <p>Menjelajahi tempat baru dan berbaur dengan masyarakat lokal memperluas sudut pandang sosiokultural saya. Saya belajar untuk senantiasa inklusif, menghormati keberagaman latar belakang, dan bersikap terbuka.</p>
+            <p>Cerita dan pengalaman perjalanan seringkali saya hadirkan ke ruang kelas sebagai materi kontekstual yang memantik rasa ingin tahu dan empati budaya peserta didik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal Running -->
+  <div id="modal-detail-running" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-detail-running')">&times;</span>
+      <div class="modal-nav prev" onclick="switchModal('modal-detail-running', 'modal-detail-traveling')"><i class="fas fa-chevron-left"></i></div>
+      <div class="modal-nav next" onclick="switchModal('modal-detail-running', 'modal-detail-hiking')"><i class="fas fa-chevron-right"></i></div>
+      <h2 class="modal-title">Running: Kedisiplinan & Stamina Pendidik</h2>
+      <div class="modal-body">
+        <div class="modal-two-col">
+          <div class="modal-col-left">
+            <div class="modal-photo-box">
+              <img src="assets/running.jpg.jpeg" alt="Running - Christophorus Ade" class="modal-box-img">
+            </div>
+            <div class="modal-tag">Disiplin Rutin</div>
+            <div class="modal-tag">Kebugaran Jasmani</div>
+          </div>
+          <div class="modal-col-right">
+            <p>Lari adalah meditasi dalam gerak berirama. Membangun komitmen bangun pagi dan menyelesaikan target jarak kilometer melatih mentalitas pantang menyerah (*grit*).</p>
+            <p>Kebugaran fisik yang prima menjadi fondasi energi positif saya dalam mengajar, mendampingi siswa berdiskusi, serta menjaga antusiasme kelas dari jam pertama hingga jam terakhir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Motivasi -->
+  <div id="modal-motivasi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-motivasi')">&times;</span>
+      <div class="modal-nav prev" onclick="switchModal('modal-motivasi', 'modal-hobi')"><i class="fas fa-chevron-left"></i></div>
+      <h2 class="modal-title">Alasan & Motivasi Menjadi Guru</h2>
+      <div class="modal-body">
+        <div class="modal-two-col">
+          <div class="modal-col-left">
+            <div class="modal-photo-box">
+              <img src="assets/motivasi.jpg" alt="Motivasi - Christophorus Ade" class="modal-box-img">
+            </div>
+            <div class="modal-tag">Panggilan Jiwa</div>
+            <div class="modal-tag">Fasilitator Belajar</div>
+          </div>
+          <div class="modal-col-right">
+            <p>Menjadi pendidik bukan sekadar profesi kerja, melainkan panggilan jiwa untuk memberi arti bagi kehidupan sesama. Saya meyakini setiap peserta didik membawa potensi emas yang menunggu untuk ditemukan dan diasah dengan penuh kasih sayang.</p>
+            <p>Melihat tatapan binar pemahaman siswa saat berhasil mengurai gagasan rumit dan menyaksikan tumbuhnya rasa percaya diri mereka adalah anugerah terbesar yang tak ternilai bagi perjalanan seorang pendidik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Perangkat Ajar -->
+  <div id="modal-perangkat-ajar" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-perangkat-ajar')">&times;</span>
+      <h2 class="modal-title">Perangkat Pembelajaran PPL</h2>
+      <div class="modal-body" style="padding-bottom: 20px;">
+        <p>Pilih kategori perangkat pembelajaran yang ingin Anda akses:</p>
+        
+        <div class="perangkat-grid">
+          <div class="perangkat-option-card" onclick="switchModal('modal-perangkat-ajar', 'modal-detail-modul')">
+            <div class="perangkat-option-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3 class="perangkat-option-title">Modul Ajar Siklus 1 - 4</h3>
+            <p class="perangkat-option-desc">Dokumen lengkap Modul Ajar Kurikulum Merdeka: Teks LHO (UDL) dan Teks Argumentasi (TaRL).</p>
+            <button class="perangkat-option-btn">Lihat Dokumen Modul</button>
+          </div>
+
+          <div class="perangkat-option-card" onclick="switchModal('modal-perangkat-ajar', 'modal-detail-materi')">
+            <div class="perangkat-option-icon">
+              <i class="fas fa-chalkboard-user"></i>
+            </div>
+            <h3 class="perangkat-option-title">Materi & Media Ajar Interaktif</h3>
+            <p class="perangkat-option-desc">Bahan Ajar BAB 1: Mengkritisi Informasi tentang Tokoh (Bahasa Indonesia Tingkat Lanjut).</p>
+            <button class="perangkat-option-btn">Lihat Materi & Media</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal Detail Modul Ajar -->
+  <div id="modal-detail-modul" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-detail-modul')">&times;</span>
+      <h2 class="modal-title">Modul Ajar Kurikulum Merdeka</h2>
+      <div class="modal-body">
+        <div class="modal-back-btn" onclick="switchModal('modal-detail-modul', 'modal-perangkat-ajar')">
+          <i class="fas fa-arrow-left"></i> Kembali ke Menu Perangkat
+        </div>
+        
+        <div class="doc-grid">
+          <!-- Modul Siklus 1 & 2 -->
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="doc-info">
+              <h4>Modul Ajar Siklus 1 & 2: Teks Laporan Hasil Observasi (LHO)</h4>
+              <p>Fase E (Kelas X) &bull; Pendekatan Understanding by Design (DUP / UDL) &bull; Menemukan fakta empiris lingkungan dan struktur LHO.</p>
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <a href="#" class="doc-link" onclick="openPdfViewer('assets/Modul Ajar Siklus 1-2 Teks LHO.pdf', 'Modul Ajar Siklus 1 & 2: Teks LHO'); return false;">
+                  <i class="fas fa-eye"></i> Pratinjau Dokumen
+                </a>
+                <a href="assets/Modul Ajar Siklus 1-2 Teks LHO.pdf" target="_blank" class="doc-link">
+                  <i class="fas fa-external-link-alt"></i> Tab Baru (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modul Siklus 3 & 4 -->
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="doc-info">
+              <h4>Modul Ajar Siklus 3 & 4: Teks Argumentasi</h4>
+              <p>Fase F (Kelas XI) &bull; Pendekatan Teaching at the Right Level (TaRL) &bull; Menganalisis opini, fakta, dan menyusun esai ketahanan pangan lokal.</p>
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <a href="#" class="doc-link" onclick="openPdfViewer('assets/Modul Ajar Siklus 3-4 Teks Argumentasi.pdf', 'Modul Ajar Siklus 3 & 4: Teks Argumentasi'); return false;">
+                  <i class="fas fa-eye"></i> Pratinjau Dokumen
+                </a>
+                <a href="assets/Modul Ajar Siklus 3-4 Teks Argumentasi.pdf" target="_blank" class="doc-link">
+                  <i class="fas fa-external-link-alt"></i> Tab Baru (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Modal Detail Materi & Media -->
+  <div id="modal-detail-materi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-detail-materi')">&times;</span>
+      <h2 class="modal-title">Materi & Media Ajar Interaktif</h2>
+      <div class="modal-body">
+        <div class="modal-back-btn" onclick="switchModal('modal-detail-materi', 'modal-perangkat-ajar')">
+          <i class="fas fa-arrow-left"></i> Kembali ke Menu Perangkat
+        </div>
+        
+        <div class="doc-grid">
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="doc-info">
+              <h4>BAB 1: Mengkritisi Informasi tentang Tokoh</h4>
+              <p>Bahan ajar Bahasa Indonesia Tingkat Lanjut mengenai telaah kritis informasi, fakta empiris, dan akurasi sumber teks tokoh.</p>
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <a href="#" class="doc-link" onclick="openPdfViewer('assets/BAB 1_Mengkritisi Informasi tentang Tokoh.pdf', 'BAB 1: Mengkritisi Informasi tentang Tokoh'); return false;">
+                  <i class="fas fa-eye"></i> Pratinjau Dokumen
+                </a>
+                <a href="assets/BAB 1_Mengkritisi Informasi tentang Tokoh.pdf" target="_blank" class="doc-link">
+                  <i class="fas fa-external-link-alt"></i> Tab Baru (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Refleksi Siklus (LK 3 & LK 4.1 - 4.4) -->
+  <div id="modal-refleksi-siklus" class="modal">
+    <div class="modal-content" style="max-width: 980px;">
+      <span class="close-modal" onclick="closeModal('modal-refleksi-siklus')">&times;</span>
+      <h2 class="modal-title">Refleksi Praktik Pembelajaran (LK 3 & LK 4)</h2>
+      <div class="modal-body">
+        <p style="margin-bottom: 20px;">Pilih siklus pembelajaran di bawah ini untuk melihat ringkasan refleksi autentik, membaca langsung berkas dokumen, atau mengunduhnya:</p>
+        
+        <!-- Cycle Tabs -->
+        <div class="cycle-tabs">
+          <button class="cycle-tab-btn active" onclick="switchCycleTab('tab-lk3', this)"><i class="fas fa-chalkboard"></i> LK 3: Terbimbing</button>
+          <button class="cycle-tab-btn" onclick="switchCycleTab('tab-lk41', this)"><i class="fas fa-seedling"></i> LK 4.1: Siklus 1 Mandiri</button>
+          <button class="cycle-tab-btn" onclick="switchCycleTab('tab-lk42', this)"><i class="fas fa-leaf"></i> LK 4.2: Siklus 2 Mandiri</button>
+          <button class="cycle-tab-btn" onclick="switchCycleTab('tab-lk43', this)"><i class="fas fa-chart-line"></i> LK 4.3: Siklus 3 Mandiri</button>
+          <button class="cycle-tab-btn" onclick="switchCycleTab('tab-lk44', this)"><i class="fas fa-award"></i> LK 4.4: Siklus 4 Mandiri</button>
+        </div>
+
+        <!-- Tab Content LK 3 -->
+        <div id="tab-lk3" class="cycle-tab-content active">
+          <div class="cycle-detail-box">
+            <h4><i class="fas fa-bookmark"></i> LK 3: Praktik Pembelajaran Terbimbing</h4>
+            <div class="cycle-meta-grid">
+              <div><span class="meta-field-label">Materi Pokok</span><div class="meta-field-val">Membaca Cepat & Infografik Biografi</div></div>
+              <div><span class="meta-field-label">Fase / Kelas</span><div class="meta-field-val">Fase E &bull; Kelas X SMAN 1 Karangnongko</div></div>
+              <div><span class="meta-field-label">Pendekatan</span><div class="meta-field-val">Deep Learning & Discovery Learning</div></div>
+            </div>
+            <p><strong>Deskripsi Pelaksanaan:</strong> Pembelajaran melatih efisiensi membaca cepat dan menyarikan keteladanan tokoh ke dalam bentuk infografis digital Canva secara terbimbing bersama Guru Pamong.</p>
+            <p><strong>Kendala yang Dihadapi:</strong> Sebagian siswa terburu-buru sehingga mengorbankan akurasi pemahaman isi bacaan; kelompok belajar awal (6 orang) terlalu besar dan memicu pasivitas.</p>
+            <p><strong>Solusi & Rencana Perbaikan:</strong> Memperkecil kelompok menjadi 3–4 orang dengan rotasi peran inklusif serta memodelkan teknik <em>skimming-scanning</em> terpandu.</p>
+            
+            <!-- Action Buttons -->
+            <div class="action-btn-row">
+              <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_3_Refleksi_Terbimbing.pdf', 'LK 3 Refleksi Praktik Pembelajaran Terbimbing', 'assets/LK_3_Refleksi_Terbimbing.docx')">
+                <i class="fas fa-expand"></i> Buka Layar Penuh
+              </button>
+              <a href="assets/LK_3_Refleksi_Terbimbing.pdf" target="_blank" class="btn-tab-pdf">
+                <i class="fas fa-external-link-alt"></i> Buka PDF di Tab Baru
+              </a>
+              <a href="assets/LK_3_Refleksi_Terbimbing.docx" class="btn-download-word">
+                <i class="fas fa-file-word"></i> Unduh Word (.docx)
+              </a>
+            </div>
+
+            <!-- Inline PDF Viewer Frame -->
+            <div class="pdf-inline-container">
+              <iframe src="assets/LK_3_Refleksi_Terbimbing.pdf" title="Pratinjau LK 3"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content LK 4.1 -->
+        <div id="tab-lk41" class="cycle-tab-content">
+          <div class="cycle-detail-box">
+            <h4><i class="fas fa-bookmark"></i> LK 4.1: Praktik Pembelajaran Mandiri Siklus 1</h4>
+            <div class="cycle-meta-grid">
+              <div><span class="meta-field-label">Materi Pokok</span><div class="meta-field-val">Teks LHO (Fakta vs Opini Subjektif)</div></div>
+              <div><span class="meta-field-label">Fase / Kelas</span><div class="meta-field-val">Fase E &bull; Kelas X SMAN 1 Karangnongko</div></div>
+              <div><span class="meta-field-label">Pendekatan</span><div class="meta-field-val">Understanding by Design (DUP / UDL)</div></div>
+            </div>
+            <p><strong>Deskripsi Pelaksanaan:</strong> Siswa mengamati objek konkret di lingkungan sekolah (taman, laboratorium) untuk memverifikasi akurasi informasi dan membedakan fakta empiris dengan opini.</p>
+            <p><strong>Kendala yang Dihadapi:</strong> Peserta didik kerap mencampurkan kata sifat emotif (“taman sangat asri”) ke dalam data observasi tanpa dukungan parameter terukur.</p>
+            <p><strong>Solusi & Rencana Perbaikan:</strong> Merancang LKPD komparatif dengan tabel parameter verifikasi fakta versus kata emotif subjektif.</p>
+            
+            <!-- Action Buttons -->
+            <div class="action-btn-row">
+              <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.1_Refleksi_Siklus_1.pdf', 'LK 4.1 Refleksi Praktik Mandiri Siklus 1', 'assets/LK_4.1_Refleksi_Siklus_1.docx')">
+                <i class="fas fa-expand"></i> Buka Layar Penuh
+              </button>
+              <a href="assets/LK_4.1_Refleksi_Siklus_1.pdf" target="_blank" class="btn-tab-pdf">
+                <i class="fas fa-external-link-alt"></i> Buka PDF di Tab Baru
+              </a>
+              <a href="assets/LK_4.1_Refleksi_Siklus_1.docx" class="btn-download-word">
+                <i class="fas fa-file-word"></i> Unduh Word (.docx)
+              </a>
+            </div>
+
+            <!-- Inline PDF Viewer Frame -->
+            <div class="pdf-inline-container">
+              <iframe src="assets/LK_4.1_Refleksi_Siklus_1.pdf" title="Pratinjau LK 4.1"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content LK 4.2 -->
+        <div id="tab-lk42" class="cycle-tab-content">
+          <div class="cycle-detail-box">
+            <h4><i class="fas fa-bookmark"></i> LK 4.2: Praktik Pembelajaran Mandiri Siklus 2</h4>
+            <div class="cycle-meta-grid">
+              <div><span class="meta-field-label">Materi Pokok</span><div class="meta-field-val">Rekonstruksi Struktur LHO & Pameran Karya</div></div>
+              <div><span class="meta-field-label">Fase / Kelas</span><div class="meta-field-val">Fase E &bull; Kelas X SMAN 1 Karangnongko</div></div>
+              <div><span class="meta-field-label">Model Belajar</span><div class="meta-field-val">Project Based Learning (PjBL) & Gallery Walk</div></div>
+            </div>
+            <p><strong>Deskripsi Pelaksanaan:</strong> Siswa menyusun teks LHO utuh (pernyataan umum, deskripsi bagian, deskripsi manfaat) dan memamerkan hasilnya dalam display kelas untuk dinilai teman sejawat.</p>
+            <p><strong>Kendala yang Dihadapi:</strong> Alokasi waktu sesi pameran karya sedikit melebar karena antusiasme siswa saat memberi umpan balik *sticky notes*.</p>
+            <p><strong>Solusi & Rencana Perbaikan:</strong> Memasang pengingat waktu digital (timer) per stasiun display (maksimal 5 menit) dan menyederhanakan rubrik umpan balik.</p>
+            
+            <!-- Action Buttons -->
+            <div class="action-btn-row">
+              <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.2_Refleksi_Siklus_2.pdf', 'LK 4.2 Refleksi Praktik Mandiri Siklus 2', 'assets/LK_4.2_Refleksi_Siklus_2.docx')">
+                <i class="fas fa-expand"></i> Buka Layar Penuh
+              </button>
+              <a href="assets/LK_4.2_Refleksi_Siklus_2.pdf" target="_blank" class="btn-tab-pdf">
+                <i class="fas fa-external-link-alt"></i> Buka PDF di Tab Baru
+              </a>
+              <a href="assets/LK_4.2_Refleksi_Siklus_2.docx" class="btn-download-word">
+                <i class="fas fa-file-word"></i> Unduh Word (.docx)
+              </a>
+            </div>
+
+            <!-- Inline PDF Viewer Frame -->
+            <div class="pdf-inline-container">
+              <iframe src="assets/LK_4.2_Refleksi_Siklus_2.pdf" title="Pratinjau LK 4.2"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content LK 4.3 -->
+        <div id="tab-lk43" class="cycle-tab-content">
+          <div class="cycle-detail-box">
+            <h4><i class="fas fa-bookmark"></i> LK 4.3: Praktik Pembelajaran Mandiri Siklus 3</h4>
+            <div class="cycle-meta-grid">
+              <div><span class="meta-field-label">Materi Pokok</span><div class="meta-field-val">Teks Argumentasi (Tesis, Argumen & Fakta)</div></div>
+              <div><span class="meta-field-label">Fase / Kelas</span><div class="meta-field-val">Fase F &bull; Kelas XI SMAN 1 Karangnongko</div></div>
+              <div><span class="meta-field-label">Pendekatan</span><div class="meta-field-val">Teaching at the Right Level (TaRL)</div></div>
+            </div>
+            <p><strong>Deskripsi Pelaksanaan:</strong> Mengelompokkan siswa berdasarkan kesiapan membaca untuk menganalisis struktur teks argumentasi bertema ketahanan pangan lokal.</p>
+            <p><strong>Kendala yang Dihadapi:</strong> Kelompok dengan kemampuan awal lambat memerlukan waktu ekstra untuk memisahkan argumen logis dari retorika opini belaka.</p>
+            <p><strong>Solusi & Rencana Perbaikan:</strong> Menerapkan kartu pemandu berpikir kritis *Claim-Evidence-Reasoning (CER)* secara bertahap (*scaffolding*).</p>
+            
+            <!-- Action Buttons -->
+            <div class="action-btn-row">
+              <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.3_Refleksi_Siklus_3.pdf', 'LK 4.3 Refleksi Praktik Mandiri Siklus 3', 'assets/LK_4.3_Refleksi_Siklus_3.docx')">
+                <i class="fas fa-expand"></i> Buka Layar Penuh
+              </button>
+              <a href="assets/LK_4.3_Refleksi_Siklus_3.pdf" target="_blank" class="btn-tab-pdf">
+                <i class="fas fa-external-link-alt"></i> Buka PDF di Tab Baru
+              </a>
+              <a href="assets/LK_4.3_Refleksi_Siklus_3.docx" class="btn-download-word">
+                <i class="fas fa-file-word"></i> Unduh Word (.docx)
+              </a>
+            </div>
+
+            <!-- Inline PDF Viewer Frame -->
+            <div class="pdf-inline-container">
+              <iframe src="assets/LK_4.3_Refleksi_Siklus_3.pdf" title="Pratinjau LK 4.3"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content LK 4.4 -->
+        <div id="tab-lk44" class="cycle-tab-content">
+          <div class="cycle-detail-box">
+            <h4><i class="fas fa-bookmark"></i> LK 4.4: Praktik Pembelajaran Mandiri Siklus 4</h4>
+            <div class="cycle-meta-grid">
+              <div><span class="meta-field-label">Materi Pokok</span><div class="meta-field-val">Menulis Esai Argumentasi Ketahanan Pangan</div></div>
+              <div><span class="meta-field-label">Fase / Kelas</span><div class="meta-field-val">Fase F &bull; Kelas XI SMAN 1 Karangnongko</div></div>
+              <div><span class="meta-field-label">Metode</span><div class="meta-field-val">Proses Menulis Terbimbing & Peer Review</div></div>
+            </div>
+            <p><strong>Deskripsi Pelaksanaan:</strong> Siswa menulis esai argumentasi orisinal mengenai potensi sumber pangan lokal non-beras, disempurnakan lewat telaah silang antarteman.</p>
+            <p><strong>Kendala yang Dihadapi:</strong> Variasi penguasaan konjungsi antarkalimat dan intrakalimat; transisi antarparagraf terkadang melompat tanpa kohesi yang padu.</p>
+            <p><strong>Solusi & Rencana Perbaikan:</strong> Menyediakan bank konjungsi pertentangan, kausalitas, dan penambahan serta pemodelan kalimat transisi.</p>
+            
+            <!-- Action Buttons -->
+            <div class="action-btn-row">
+              <button class="btn-open-pdf" onclick="openPdfViewer('assets/LK_4.4_Refleksi_Siklus_4.pdf', 'LK 4.4 Refleksi Praktik Mandiri Siklus 4', 'assets/LK_4.4_Refleksi_Siklus_4.docx')">
+                <i class="fas fa-expand"></i> Buka Layar Penuh
+              </button>
+              <a href="assets/LK_4.4_Refleksi_Siklus_4.pdf" target="_blank" class="btn-tab-pdf">
+                <i class="fas fa-external-link-alt"></i> Buka PDF di Tab Baru
+              </a>
+              <a href="assets/LK_4.4_Refleksi_Siklus_4.docx" class="btn-download-word">
+                <i class="fas fa-file-word"></i> Unduh Word (.docx)
+              </a>
+            </div>
+
+            <!-- Inline PDF Viewer Frame -->
+            <div class="pdf-inline-container">
+              <iframe src="assets/LK_4.4_Refleksi_Siklus_4.pdf" title="Pratinjau LK 4.4"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Orientasi & Observasi (LK 1 & LK 2) -->
+  <div id="modal-orientasi-observasi" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-orientasi-observasi')">&times;</span>
+      <h2 class="modal-title">Orientasi & Observasi Sekolah (LK 1 & LK 2)</h2>
+      <div class="modal-body">
+        <p style="margin-bottom: 25px;">Dokumen observasi komprehensif mengenai kultur sekolah, tata kelola manajerial, dan iklim lingkungan belajar di SMA Negeri 1 Karangnongko:</p>
+        
+        <div class="doc-grid">
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-compass"></i></div>
+            <div class="doc-info">
+              <h4>LK 1: Orientasi PPL Mandiri</h4>
+              <p>Laporan orientasi pengenalan visi, misi, kurikulum operasional sekolah, serta pembagian tugas di SMAN 1 Karangnongko.</p>
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <a href="#" class="doc-link" onclick="openPdfViewer('assets/LK 1 Orientasi PPL Mandiri.pdf', 'LK 1: Orientasi PPL Mandiri'); return false;">
+                  <i class="fas fa-eye"></i> Pratinjau Dokumen
+                </a>
+                <a href="assets/LK 1 Orientasi PPL Mandiri.pdf" target="_blank" class="doc-link">
+                  <i class="fas fa-external-link-alt"></i> Buka PDF (Tab Baru)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-school"></i></div>
+            <div class="doc-info">
+              <h4>LK 2: Observasi Lingkungan Belajar</h4>
+              <p>Hasil telaah iklim sosiokultural, sarana prasarana penunjang literasi, tata tertib, dan karakteristik peserta didik.</p>
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <a href="#" class="doc-link" onclick="openPdfViewer('assets/LK 2 Observasi Lingkungan Belajar.pdf', 'LK 2: Observasi Lingkungan Belajar'); return false;">
+                  <i class="fas fa-eye"></i> Pratinjau Dokumen
+                </a>
+                <a href="assets/LK 2 Observasi Lingkungan Belajar.pdf" target="_blank" class="doc-link">
+                  <i class="fas fa-external-link-alt"></i> Buka PDF (Tab Baru)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Kegiatan Non-Mengajar & Jurnal -->
+  <div id="modal-non-mengajar" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('modal-non-mengajar')">&times;</span>
+      <h2 class="modal-title">Kegiatan Non-Mengajar & Jurnal Harian</h2>
+      <div class="modal-body">
+        <p style="margin-bottom: 25px;">Pelaksanaan peran persekolahan secara utuh selama PPL Mandiri di SMA Negeri 1 Karangnongko (rata-rata 2,5 jam per minggu):</p>
+        
+        <div class="doc-grid">
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-user-shield"></i></div>
+            <div class="doc-info">
+              <h4>Piket Harian & Penegakan Kedisiplinan</h4>
+              <p>Menyambut peserta didik di gerbang sekolah (5S: Senyum, Salam, Sapa, Sopan, Santun), memantau ketertiban atribut seragam, dan mencatat perizinan siswa.</p>
+            </div>
+          </div>
+
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-flag"></i></div>
+            <div class="doc-info">
+              <h4>Upacara Bendera & Pembiasaan Karakter</h4>
+              <p>Mengikuti dan mendampingi pelaksanaan upacara bendera hari Senin, apel pagi, senam bersama, serta program literasi sekolah.</p>
+            </div>
+          </div>
+
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-users-cog"></i></div>
+            <div class="doc-info">
+              <h4>Rapat Koordinasi & Kolaborasi Guru</h4>
+              <p>Terlibat dalam briefing pagi dewan guru, diskusi MGMP Bahasa Indonesia sekolah, dan rapat koordinasi bersama Guru Pamong serta DPL.</p>
+            </div>
+          </div>
+
+          <div class="doc-item">
+            <div class="doc-icon"><i class="fas fa-book-reader"></i></div>
+            <div class="doc-info">
+              <h4>Jurnal Mengajar Harian (Kelas X & XII)</h4>
+              <p>Pencatatan konsisten aktivitas kelas, materi pokok, absensi, serta catatan anekdotal perkembangan perilaku belajar siswa per pertemuan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255,255,255,0.08); background: rgba(15,23,42,0.6); backdrop-filter: blur(10px); margin-top: 60px;">
+    <p style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 8px;">
+      Christophorus Ade Setya Cahya Kustanto, S.Pd.
+    </p>
+    <p style="font-size: 0.88rem; color: var(--secondary-text);">
+      NIM: 2501094596 &bull; PPG Calon Guru Gelombang 2 Tahun 2026 &bull; Universitas Widya Dharma Klaten &bull; SMA Negeri 1 Karangnongko
+    </p>
+    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 15px;">
+      &copy; 2026 E-Portfolio PPL Mandiri. Dikembangkan dengan sepenuh hati untuk kemajuan pendidikan Indonesia.
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Global Modal Functions
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.style.display = 'flex';
+        setTimeout(() => modal.classList.add('show'), 10);
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('show');
+        setTimeout(() => modal.style.display = 'none', 400);
+      }
+    }
+
+    function switchModal(currentId, targetId) {
+      const currentModal = document.getElementById(currentId);
+      const targetModal = document.getElementById(targetId);
+      
+      if (currentModal && targetModal) {
+        currentModal.classList.remove('show');
+        setTimeout(() => {
+          currentModal.style.display = 'none';
+          targetModal.style.display = 'flex';
+          setTimeout(() => targetModal.classList.add('show'), 10);
+        }, 400);
+      }
+    }
+
+    // Full-Screen PDF Document Viewer
+    function openPdfViewer(pdfUrl, title, docxUrl) {
+      const viewer = document.getElementById('modal-pdf-viewer');
+      const titleElem = document.getElementById('pdf-viewer-title');
+      const frameElem = document.getElementById('pdf-viewer-frame');
+      const externalLink = document.getElementById('pdf-viewer-external');
+      const downloadLink = document.getElementById('pdf-viewer-download');
+
+      if (titleElem) titleElem.innerHTML = `<i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 8px;"></i> ${title}`;
+      if (frameElem) frameElem.src = pdfUrl;
+      if (externalLink) externalLink.href = pdfUrl;
+      
+      if (downloadLink) {
+        if (docxUrl) {
+          downloadLink.href = docxUrl;
+          downloadLink.style.display = 'inline-flex';
+        } else {
+          downloadLink.style.display = 'none';
+        }
+      }
+
+      openModal('modal-pdf-viewer');
+    }
+
+    // Cycle Tab Switcher (Inside Refleksi Modal)
+    function switchCycleTab(tabId, btn) {
+      const tabs = document.querySelectorAll('.cycle-tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      const btns = document.querySelectorAll('.cycle-tab-btn');
+      btns.forEach(b => b.classList.remove('active'));
+
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) {
+        targetTab.classList.add('active');
+      }
+      if (btn) {
+        btn.classList.add('active');
+      }
+    }
+
+    // Filter Artefak Cards
+    function filterArtefak(category, btn) {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.artefak-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-cat');
+        if (category === 'all' || cat === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    window.addEventListener('load', () => {
+      // Preloader Logic
+      const preloader = document.getElementById('preloader');
+      const percentageText = document.getElementById('load-percentage');
+      const progressBar = document.querySelector('.loader-progress-bar');
+      let progress = 0;
+      
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 5;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+              preloader.style.display = 'none';
+            }, 500);
+          }, 200);
+        }
+        if (percentageText) percentageText.innerText = progress + '%';
+        if (progressBar) progressBar.style.width = progress + '%';
+      }, 20);
+
+      // Scroll Spy & Progress Bar
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav ul li a');
+      const scrollBar = document.getElementById('scroll-bar');
+
+      window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        if(scrollBar) scrollBar.style.width = scrolled + "%";
+
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.pageYOffset >= (sectionTop - 150)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') && link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Card Click Listeners
+      const cardLB = document.getElementById('card-latar-belakang');
+      const cardHobi = document.getElementById('card-hobi');
+      const cardMotivasi = document.getElementById('card-motivasi');
+      const cardFilosofi = document.getElementById('card-filosofi');
+
+      if(cardLB) cardLB.addEventListener('click', () => openModal('modal-latar-belakang'));
+      if(cardHobi) cardHobi.addEventListener('click', () => openModal('modal-hobi'));
+      if(cardMotivasi) cardMotivasi.addEventListener('click', () => openModal('modal-motivasi'));
+      if(cardFilosofi) cardFilosofi.addEventListener('click', () => {
+        document.getElementById('filosofi').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // Close modal on outside click
+      window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+          closeModal(e.target.id);
+        }
+      });
+
+      // Custom Glowing Cursor
+      const cursorGlow = document.getElementById('cursor-glow');
+      document.addEventListener('mousemove', (e) => {
+        if(cursorGlow) {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+        }
+      });
+
+      document.addEventListener('mousedown', () => {
+        if(cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(0.8)';
+      });
+      document.addEventListener('mouseup', () => {
+        if(cursorGlow) cursorGlow.style.transform = 'translate(-50%, -50%) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
